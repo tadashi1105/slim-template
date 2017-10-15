@@ -13,6 +13,9 @@ sudo a2ensite 001-itace.conf
 # Logs
 chmod 777 /projects/itace/logs
 
+# Composer
+cd /projects/itace && composer install
+
 # MySQL
-sudo service mysql start
-mysql -u root -p < /projects/itace/setup/db.sql
+# sudo service mysql start
+# mysql -u root -p < /projects/itace/setup/db.sql
